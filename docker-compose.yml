@@ -1,0 +1,9 @@
+services:
+  tutoring:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./home:/home/james"
+    ports:
+      - "25565:25565"
