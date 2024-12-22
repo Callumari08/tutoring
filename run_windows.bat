@@ -8,7 +8,7 @@ IF ERRORLEVEL 1 (
     exit /b 1
 )
 
-echo "Running Image"
+echo "Running Image!"
 
 docker run -it -p 25565:25565 -v "%cd%\home:/home/james" tutoring-tutoring
 IF ERRORLEVEL 1 (
