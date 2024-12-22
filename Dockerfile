@@ -1,4 +1,4 @@
-FROM archlinux-latest
+FROM archlinux:latest
 
 RUN pacman -Syu --noconfirm && pacman -S --noconfirm base-devel
 RUN pacman-key --init # archlinux docker hub page says you gotta do this yourself for security reasons: https://hub.docker.com/_/archlinux/
