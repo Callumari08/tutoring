@@ -2,6 +2,8 @@
 REM Enable error handling
 setlocal EnableDelayedExpansion
 
+git pull
+
 docker-compose -f docker-compose.yml up --build
 IF ERRORLEVEL 1 (
     echo "Error occurred during docker-compose up"
